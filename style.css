@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(82, 93, 93);
+  color: white;
+  font-family: Inter;
+  min-height: 100vh;
+}
+
+header {
+  font-family: Inter;
+  /* color: rgb(255, 0, 191); */
+  color: white;
+  font-size: 2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button {
+  background: #30313d;
+  border-radius: 6px;
+}
+
+form button:hover {
+  background: rgb(53, 160, 247);
+  color: white;
+  /* border: 6px solid rgb(23, 117, 239); */
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.complete-btn,
+.trash-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background: lime;
+}
+
+.todo-item {
+  padding: 0rem 1.2rem;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+  font-family: Metal Mania;
+  font-weight: 600;
+  color: red;
+  background: black;
+}
+
+.fall {
+  transform: translate(8rem) rotateZ(24deg);
+  opacity: 0;
+}
+
+select {
+  appearance: none;
+  outline: none;
+  border: none;
+  color: rgb(25, 26, 26);
+  border-radius: 6px;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 0.8rem;
+  border: none;
+  background: white;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #30313d;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+  /* background: white;
+  color: rgb(255, 0, 191); */
+  background: rgb(53, 160, 247);
+  color: white;
+  /* border: 6px solid rgb(23, 117, 239); */
+}
+
+/* color: #61dafb;
+color: #30313d;
+background-color: #17181f;
+color: #aaa; */
